@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("emoji-art-btn").addEventListener("click", generateEmojiArt);
   document.getElementById("useless-fact-btn").addEventListener("click", showUselessFact);
   document.getElementById("riddle-btn").addEventListener("click", showRiddle);
-  document.getElementById("photo1-btn").addEventListener("click", () => displayPhoto('photo1.jpg'));
-  document.getElementById("photo2-btn").addEventListener("click", () => displayPhoto('photo2.jpg'));
+  document.getElementById("photo1-btn").addEventListener("click", () => displayPhoto('pic(1).png'));
+  document.getElementById("photo2-btn").addEventListener("click", () => displayPhoto('pic(2).png'));
 });
 
 function displayPhoto(photoSrc) {

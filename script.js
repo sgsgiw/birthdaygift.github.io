@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("useless-fact-btn").addEventListener("click", showUselessFact);
   document.getElementById("riddle-btn").addEventListener("click", showRiddle);
 
-  // Event listeners for photo buttons
-  document.getElementById("photo1-btn").addEventListener("click", () => displayPhoto("pic(1).png"));
-  document.getElementById("photo2-btn").addEventListener("click", () => displayPhoto("pic(2).png"));
+  // Photo buttons
+  document.getElementById("photo1-btn").addEventListener("click", () => displayPhoto("images/pic(1).png"));
+  document.getElementById("photo2-btn").addEventListener("click", () => displayPhoto("images/pic(2).png"));
 });
 
 function delayOutput(text, delay = 1500) {
@@ -63,7 +63,7 @@ function showRiddle() {
 
 function displayPhoto(photoSrc) {
   const photo = document.getElementById("photo");
-  photo.src = photoSrc;
+  photo.src = photoSrc; // Set the source of the image
   photo.style.display = "block"; // Show the image
   document.getElementById("output").textContent = ""; // Clear any text output
 }
